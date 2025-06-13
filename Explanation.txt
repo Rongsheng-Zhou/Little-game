@@ -1,0 +1,6 @@
+The three code files need to be kept in the same directory.
+-----------------------------------------------------------
+1. You can directly open the index.html file in the browser to run the game. There are a total of 5 levels in the game. After passing all of them, you will successfully pass the level. It is recommended to use the chrome browser.
+In the first level, you need to eliminate 5 monsters to pass. In the second level, you need to eliminate 10 monsters. In the third level, you need to eliminate 15 monsters. In the fourth level, you need to eliminate 20 monsters. In the fifth level, you need to eliminate 25 monsters.
+3. As the level of the level increases, the monsters move faster and have more health bars.
+4. Players need to upgrade their weapons in a timely manner to deal with the monsters in the later levels
