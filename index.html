@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The game of the little person fights monsters to level up</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- 游戏头部信息 -->
+        <div class="game-header">
+            <div class="game-title">the little person fights monsters to level up</div>
+            <div class="stats-container">
+                <div class="stat-box">
+                    <div class="stat-label">Current level</div>
+                    <div class="stat-value" id="level">1/5</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Eliminate monsters</div>
+                    <div class="stat-value" id="killed">0</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Weapon level</div>
+                    <div class="stat-value" id="weapon-level">1</div>
+                </div>
+                <div class="stat-box">
+                    <div class="stat-label">Gold coin</div>
+                    <div class="stat-value" id="coins">0</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- The main scene of the game -->
+        <div class="game-stage">
+            <div class="ground"></div>
+            <div class="level-indicator">Level <span id="current-level">1</span> </div>
+
+            <!-- Player character -->
+            <div class="player" id="player">
+                <div class="player-head"></div>
+                <div class="player-body"></div>
+                <div class="player-leg left"></div>
+                <div class="player-leg right"></div>
+                <div class="weapon">
+                    <div class="weapon-level">Lv.1</div>
+                </div>
+            </div>
+
+            <!-- Monster container -->
+            <div id="enemies-container"></div>
+
+            <!-- Attack effect -->
+            <div class="attack-effect" id="attack-effect"></div>
+
+            <!-- Upgrade special effects -->
+            <div class="level-up" id="level-up">Weapon upgrade!</div>
+        </div>
+
+        <!-- Control button -->
+        <div class="controls">
+            <button class="btn" id="attack-btn">attack</button>
+            <button class="btn" id="upgrade-btn">Upgrade weapons (10 gold coins)</button>
+            <button class="btn" id="start-btn">Restart</button>
+        </div>
+
+        <div class="instructions">Use the attack button to eliminate monsters, collect gold coins to upgrade weapons, and pass 5 levels!</div>
+
+        <!-- Game end interface -->
+        <div class="game-over" id="game-over">
+            <div class="result-title">Game over</div>
+            <div class="result-stats">
+                You pass level <span id="final-level">0</span><br>
+                Totally kill  <span id="total-killed">0</span> monsters
+            </div>
+            <button class="restart-btn" id="restart-btn">Restart</button>
+        </div>
+
+        <!-- Level completion interface -->
+        <div class="level-complete" id="level-complete">
+            <div class="result-title">Level finished!</div>
+            <div class="result-stats">
+                You have passed Level <span id="completed-level">1</span><br>
+                Get ready to enter the next level
+            </div>
+            <button class="restart-btn" id="next-level-btn">next level</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
